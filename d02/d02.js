@@ -14,4 +14,4 @@ instructions.map(line => {
   }
 );
 
-console.log(code);
+console.log('And the code is ... %s', code);
