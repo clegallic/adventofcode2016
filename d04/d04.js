@@ -22,7 +22,7 @@ var isRealRoom = (roomCode, checksum) => {
     // but with greater occurence than the last letter in the checksum
     if(lastNumberOfOccurence > 0){
       return [...roomCode].every(
-        letter => checksum.indexOf(letter) > -1 || letterOccurence(letter, roomCode) <= lastNumberOfOccurence
+        letter => letterOccurence(letter, roomCode) <= lastNumberOfOccurence
       );
     }
     else return false;
